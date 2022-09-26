@@ -1,0 +1,94 @@
+.imagen_index{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    z-index:-1;
+  }
+  
+  .imagen_index > .img_index_1 {
+    width: 50%;
+    height: 20em;
+    transition:  all 1s 3s  ease;
+  }
+  
+  .imagen_index .img_index_1 :hover{
+    border: 2px solid black;
+  }
+  
+  .imagen_index .img_index_1 img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .nosotros {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    border: black;
+    border-style: solid;
+    border-radius: 20px;
+    font-size: 1.3em;
+  }
+  
+  .nosotros > .nosotros_titulo{
+    font-size: 1.5em;
+    color:#1e9a15;
+    text-decoration: underline;
+  }
+  
+  .desglosado{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+  }
+  
+  .desglosado > .categorias2 {
+    padding-top: 10px;
+    width: 30%;
+    padding-left: 20px;
+    border: black;
+    border-style: solid;
+    border-radius: 20px;
+    font-size: 1.3em;
+  }
+  
+  .categorias_titulo {
+    font-size: 1.4em;
+    color:#1e9a15;
+    text-decoration: underline;
+  }
+  
+  .profesionales {
+    width: 100%;
+    color:#1e9a15;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  .profesionales_sub {
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+  }
+  
+  .profesionales_img{
+    width: 20%;
+    height: 20em;
+    border: #16fb0661;
+    border-style: groove;
+    border-radius: 20px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  .profesionales_img img{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+    margin-top: 20px;
+  }
+  
+  .imagen_prof_subtitulo {
+    padding-top: 20px;
+  }
