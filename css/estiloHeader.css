@@ -84,6 +84,7 @@
     text-align: center;
     padding-top: 30px;
     margin-top: 30px;
+    color: var(--color6);
   }
   .footer {
     display: flex; /* flex-direccion = row  y flex-wrap = nowrap por defecto 
@@ -92,7 +93,14 @@
   }
   .redes {
     margin-top: 1rem;
-    color: black;
+    border:1px solid var(--color6);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: var(--color5);
+    border-radius: 10px 100px / 120px;
+  }
+  .redes a{
+    
+    color: var(--color2);
   }
   
   
