@@ -1,159 +1,130 @@
 
-.grid-container {
+/* celulares*/
+@media screen and (max-width: 640px) {
+  .grid-container {
     display: grid;
     width: 100%;
     margin: 20px auto;
     /* justify-items: center;
-     align-items: center; */
-  
+       align-items: center; */
+
     /* justify-content:start; */
     row-gap: 5px;
-    
+
     grid-template-columns: repeat(
       12,
       1fr
     ); /* divide en 12 columnas y les da igual tamaño*/
-    grid-template-rows: repeat(16, 1fr);
-    /* grid-template-areas:
-        "area1 area1 area1 area1 area1"
-        "area2 area2 area2 area3 area3"
-        "area2 area2 area2 area3 area3"
-        "area4 area4 area4 area3 area3"
-        "area5 area5 area5 area5 area5"; */
+    grid-template-rows: repeat(15, 1fr);
   }
   .grid-aviso {
     grid-column: 1/-1;
-    justify-self:end;
+    justify-self: end;
   }
   .grid-aviso > .aviso {
     display: inline-block;
     color: var(--color4);
     background-color: var(--color3);
     border: 2px dotted black;
-    padding: .5em;
+    padding: 0.5em;
   }
-  
-  
+
   /* grid Animales */
-  
+
   .grid-animales {
-    box-shadow: 0px 3px 5px -4px #17540C;
+    box-shadow: 0px 3px 5px -4px #17540c;
     align-self: start;
-    justify-self: center; 
-    
-    
+    justify-self: center;
   }
-  .grid-animales img{
+  .grid-animales img {
     width: 45%;
     height: 50%;
-    box-shadow: 5px 5px 10px rgba(0, 0,0, 0.3);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 120px;
     background-color: var(--color2);
   }
-  
+
   .perro {
     grid-column: 1/4;
-    
-    }
+  }
   .gato {
     grid-column: 4/7;
-    
   }
   .roedor {
     grid-column: 7/10;
-   
-  
   }
   .ave {
     grid-column: 10/13;
-      
   }
-  
+
   /*grid productos*/
   .titulo-productos {
-    grid-column: 1/4;
-    grid-row: 3/7;
+    grid-column: 1/13;
+    grid-row: 3/4;
     padding-left: 1em;
-    /* justify-self: center; */
-    
+    justify-self: center;
+    text-decoration: underline;
   }
-  .grid-productos ol{
-    padding-top: .5em;
+  .grid-productos ol {
+    padding-top: 0.5em;
   }
-  .grid-productos{
+  .grid-productos {
     padding-top: 1em;
-    border-bottom: 1px solid black;
-  }
-  .accesorios {
-    grid-column: 4/7;
-    grid-row: 3/7;
-  }
-  .alimentos {
-    grid-column: 7/10;
-    grid-row: 3/7;
-  }
-  .juguetes {
-    grid-column: 10/13;
-    grid-row: 3/5;
     border-bottom: none;
   }
-  .cuchas {
-    grid-column: 10/13;
-    grid-row: 5/7;
-    
-  }
-  /*grid especialidades*/
-  
-  .grid-especialidades {
+  .accesorios {
     grid-column: 1/7;
-    grid-row: 7/11;
+    grid-row: 4/7;
+  }
+  .alimentos {
+    grid-column: 7/13;
+    grid-row: 4/7;
+  }
+  .juguetes {
+    grid-column: 1/7;
+    grid-row: 7/9;
+    border-bottom: 1px solid black;
+  }
+  .cuchas {
+    grid-column: 7/13;
+    grid-row: 7/9;
+    border-bottom: 1px solid black;
+  }
+  .grid-especialidades {
+    grid-column: 1/13;
+    grid-row: 9/11;
     margin-left: 1em;
-    
   }
   .grid-especialistas {
-    grid-column: 7/13;
-    grid-row: 7/11;
-    align-self: center;
+    grid-column: 1/13;
+    grid-row: 11/13;
+    align-self: stretch;
   }
+
   .grid-belleza {
-    grid-column: 4/10;
-    grid-row: 11/16;
-    
+    grid-column: 1/13;
+    grid-row: 13/16;
   }
   .img-belleza {
     width: 100%;
     position: relative;
-    z-index: -1;
   }
-  
-  .belleza-texto{
+  .belleza-texto {
+    font-size: 1em;
+    /* font-weight: bold; */
     position: absolute;
-    font-weight: bold;
-    width: 50%;
-    left: .5em;
-    bottom: .5em;
-    color:var(--color2);
-    /* text-shadow: 2px 2px black;  */
-    
+    width: 100%;
+    left: 0.5em;
+    bottom: 1em;
+    color: var(--color2);
   }
-  
+
   .img-belleza img {
     width: 100%;
-    filter: drop-shadow(16px 16px 20px var(--color3))  brightness(0.5);
+    filter: drop-shadow(16px 16px 20px var(--color3)) brightness(0.5);
+    border-radius: 25% 10%;
   }
-  
-  
-  /* fin grid*/
-  
-  .especialidades {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height: 100%;
-    
-  }
+  /* clases codo a codo flexbox*/
   /* tengo los 3 divs con las imagenes dentro de este contenedor  */
   .imagenes-especialistas {
     width: 100%;
@@ -179,76 +150,332 @@
   .especialistas {
     width: 50%;
   }
-  /* celulares*/
-  @media screen and (max-width: 640px) {
-    /*grid productos*/
+}
+/*celulares landscape*/
+@media screen and (min-width: 640px) and (max-width: 850px) {
+  .grid-container {
+    display: grid;
+    width: 100%;
+    margin: 20px auto;
+    row-gap: 5px;
+
+    grid-template-columns: repeat(
+      12,
+      1fr
+    ); /* divide en 12 columnas y les da igual tamaño*/
+    grid-template-rows: repeat(14, 1fr);
+    
+  }
+  .grid-aviso {
+    grid-column: 1/-1;
+    justify-self: end;
+  }
+  .grid-aviso > .aviso {
+    display: inline-block;
+    color: var(--color4);
+    background-color: var(--color3);
+    border: 2px dotted black;
+    padding: 0.5em;
+  }
+
+  /* grid Animales */
+
+  .grid-animales {
+    box-shadow: 0px 3px 5px -4px #17540c;
+    align-self: start;
+    justify-self: center;
+  }
+  .grid-animales img {
+    width: 45%;
+    height: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 120px;
+    background-color: var(--color2);
+  }
+
+  .perro {
+    grid-column: 1/4;
+  }
+  .gato {
+    grid-column: 4/7;
+  }
+  .roedor {
+    grid-column: 7/10;
+  }
+  .ave {
+    grid-column: 10/13;
+  }
+
+  /*grid productos*/
   .titulo-productos {
     grid-column: 1/13;
     grid-row: 3/4;
     padding-left: 1em;
-     justify-self: center; 
-    text-decoration: underline;
+    /* justify-self: center; */
   }
-  .grid-productos ol{
-    padding-top: .5em;
+  .grid-productos ol {
+    padding-top: 0.5em;
   }
-  .grid-productos{
+  .grid-productos {
     padding-top: 1em;
-    border-bottom: none;
-    
+    border-bottom: 1px solid black;
   }
   .accesorios {
-    grid-column: 1/7;
-    grid-row: 4/8;
+    grid-column: 1/4;
+    grid-row: 4/7;
   }
   .alimentos {
-    grid-column: 7/13;
-    grid-row: 4/8;
+    grid-column: 4/7;
+    grid-row: 4/7;
   }
   .juguetes {
-    grid-column: 1/7;
-    grid-row: 8/10;
-    border-bottom: 1px solid black;
+    grid-column: 7/10;
+    grid-row: 4/7;
   }
   .cuchas {
-    grid-column: 7/13;
-    grid-row: 8/10;
-    border-bottom: 1px solid black;
+    grid-column: 10/13;
+    grid-row: 4/7;
   }
+  /*grid especialidades*/
+
   .grid-especialidades {
-    grid-column: 1/13;
-    grid-row: 10/12;
+    grid-column: 1/7;
+    grid-row: 7/10;
     margin-left: 1em;
-    
   }
   .grid-especialistas {
-    grid-column: 1/13;
-    grid-row: 12/14;
-    align-self: stretch;
-  } 
-  
+    grid-column: 7/13;
+    grid-row: 7/10;
+    align-self: center;
+  }
   .grid-belleza {
-    grid-column: 1/13;
-    grid-row: 14/17;
-    
+    grid-column: 3/11;
+    grid-row: 10/15;
   }
   .img-belleza {
     width: 100%;
-     position: relative; 
-    
+    position: relative;
+    z-index: -1;
   }
-  .belleza-texto{
-    font-size: 1em;
-    /* font-weight: bold; */
+
+  .belleza-texto {
     position: absolute;
+    font-size: 0.9em;
     width: 100%;
-    left: .5em;
-    bottom: 1em;
-    
+    bottom: 6em;
+    left: 1em;
+    color: var(--color2);
+    /* text-shadow: 2px 2px black;  */
   }
-  
+
   .img-belleza img {
     width: 100%;
-  
+    filter: drop-shadow(16px 16px 20px var(--color3)) brightness(0.5);
+    border-radius: 25% 10%;
   }
-    }
+
+  /* fin grid*/
+  /* hecho con flex*/
+  .especialidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  /* tengo los 3 divs con las imagenes dentro de este contenedor  */
+  .imagenes-especialistas {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  /* los div con las imagenes se accede con el selector de hijos
+         toman un tamaño del 30% del contenedor */
+  .imagenes-especialistas > .img-esp {
+    padding-top: 10px;
+    width: 30%;
+    transition: all 1s 3s ease;
+  }
+  /* los elementos imagenes abarcan el 100% del div anterior */
+  .imagenes-especialistas .img-esp img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10% / 50%;
+  }
+  .imagenes-especialistas .img-esp :hover {
+    border: 2px solid black;
+    transform: scale(1.2, 1.2);
+  }
+  .especialistas {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 850px) {
+  .grid-container {
+    display: grid;
+    width: 100%;
+    margin: 20px auto;
+    /* justify-items: center;
+     align-items: center; */
+
+    /* justify-content:start; */
+    row-gap: 5px;
+
+    grid-template-columns: repeat(
+      12,
+      1fr
+    ); /* divide en 12 columnas y les da igual tamaño*/
+    grid-template-rows: repeat(16, 1fr);
+    /* grid-template-areas:
+        "area1 area1 area1 area1 area1"
+        "area2 area2 area2 area3 area3"
+        "area2 area2 area2 area3 area3"
+        "area4 area4 area4 area3 area3"
+        "area5 area5 area5 area5 area5"; */
+  }
+  .grid-aviso {
+    grid-column: 1/-1;
+    justify-self: end;
+  }
+  .grid-aviso > .aviso {
+    display: inline-block;
+    color: var(--color4);
+    background-color: var(--color3);
+    border: 2px dotted black;
+    padding: 0.5em;
+  }
+
+  /* grid Animales */
+
+  .grid-animales {
+    box-shadow: 0px 3px 5px -4px #17540c;
+    align-self: start;
+    justify-self: center;
+  }
+  .grid-animales img {
+    width: 45%;
+    height: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 120px;
+    background-color: var(--color2);
+  }
+
+  .perro {
+    grid-column: 1/4;
+  }
+  .gato {
+    grid-column: 4/7;
+  }
+  .roedor {
+    grid-column: 7/10;
+  }
+  .ave {
+    grid-column: 10/13;
+  }
+
+  /*grid productos*/
+  .titulo-productos {
+    grid-column: 1/4;
+    grid-row: 3/7;
+    padding-left: 1em;
+    /* justify-self: center; */
+  }
+  .grid-productos ol {
+    padding-top: 0.5em;
+  }
+  .grid-productos {
+    padding-top: 1em;
+    border-bottom: 1px solid black;
+  }
+  .accesorios {
+    grid-column: 4/7;
+    grid-row: 3/7;
+  }
+  .alimentos {
+    grid-column: 7/10;
+    grid-row: 3/7;
+  }
+  .juguetes {
+    grid-column: 10/13;
+    grid-row: 3/5;
+    border-bottom: none;
+  }
+  .cuchas {
+    grid-column: 10/13;
+    grid-row: 5/7;
+  }
+  /*grid especialidades*/
+
+  .grid-especialidades {
+    grid-column: 1/7;
+    grid-row: 7/11;
+    margin-left: 1em;
+  }
+  .grid-especialistas {
+    grid-column: 7/13;
+    grid-row: 7/11;
+    align-self: center;
+  }
+  .grid-belleza {
+    grid-column: 4/10;
+    grid-row: 11/16;
+  }
+  .img-belleza {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+  }
+
+  .belleza-texto {
+    position: absolute;
+    font-weight: bold;
+    width: 50%;
+    left: 2em;
+    bottom: 0.5em;
+    color: var(--color2);
+    /* text-shadow: 2px 2px black;  */
+  }
+
+  .img-belleza img {
+    width: 100%;
+    border-radius: 25% 10%;
+    filter: drop-shadow(16px 16px 20px var(--color3)) brightness(0.5);
+  }
+
+  /* fin grid*/
+  /* hecho con flex*/
+  .especialidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  /* tengo los 3 divs con las imagenes dentro de este contenedor  */
+  .imagenes-especialistas {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  /* los div con las imagenes se accede con el selector de hijos
+     toman un tamaño del 30% del contenedor */
+  .imagenes-especialistas > .img-esp {
+    padding-top: 10px;
+    width: 30%;
+    transition: all 1s 3s ease;
+  }
+  /* los elementos imagenes abarcan el 100% del div anterior */
+  .imagenes-especialistas .img-esp img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10% / 50%;
+  }
+  .imagenes-especialistas .img-esp :hover {
+    transform: scale(1.2, 1.2);
+  }
+  .especialistas {
+    width: 50%;
+  }
+}
