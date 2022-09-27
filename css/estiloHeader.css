@@ -22,10 +22,10 @@
     --color6:rgb(144, 12, 63);
   }
   header {
-    font-size: 1em;
+    font-size: 1.4em;
     background-image: linear-gradient(90deg, var(--color1), rgb(29, 186, 136));
-    height: 8em;
-    padding-top: 30px;
+    height: 6em;
+    padding-top: 40px;
     padding-bottom: 10px;
     text-align: center;
     /* position: fixed; */
@@ -44,6 +44,7 @@
     /* margin-top: 120px; */
     top: 0;
     width: 100%;
+    z-index: 1;
   }
   .ul-nav {
     display: flex;

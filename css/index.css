@@ -2,7 +2,7 @@
     width: 100%;
     display:flex;
     justify-content: space-around;
-    z-index:-1;
+    z-index: 0;
   }
   
   .imagen_index > .img_index_1 {
@@ -73,22 +73,27 @@
   }
   
   .profesionales_img{
-    width: 20%;
+    width: 25%;
     height: 20em;
     border: #16fb0661;
     border-style: groove;
-    border-radius: 20px;
+    border-radius: 20%;
     font-size: 1.2em;
     text-align: center;
   }
   
   .profesionales_img img{
-    width: 100%;
+    width: 90%;
     height: 100%;
     padding-bottom: 40px;
     margin-top: 20px;
+    border-radius: 50%;
   }
   
+  .profesionales_sub :hover{
+    transform: scale(1.1,1.1);
+    }
+
   .imagen_prof_subtitulo {
     padding-top: 20px;
   }
