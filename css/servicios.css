@@ -130,8 +130,8 @@
     position: absolute;
     font-weight: bold;
     width: 50%;
-    left: 5%;
-    bottom: 5%;
+    left: .5em;
+    bottom: .5em;
     color:var(--color2);
     /* text-shadow: 2px 2px black;  */
     
@@ -242,8 +242,8 @@
     /* font-weight: bold; */
     position: absolute;
     width: 100%;
-    left: 2%;
-    top: 10%;
+    left: .5em;
+    bottom: 1em;
     
   }
   
