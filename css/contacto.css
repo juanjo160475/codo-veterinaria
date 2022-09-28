@@ -1,5 +1,6 @@
 .grid-container{
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     height: 40rem;
     display: grid;
     /*grid-template-columns: 33.33%, 33.33%, 33.33%;
@@ -9,27 +10,42 @@
                          "s s t t"
                          "s s t t"
                          "s s t t";
-    border: 1px solid black;
     gap: 2rem;
-    border-radius: 10px;
 }
 
-.info_contacto {
-    background-color: rgb(218, 247, 166, 0.4);
+.info_general {
+    background-color: rgb(218, 247, 166, 0.5);
     border-radius: 10px;
     grid-area: f;
+    font-size:1.2em;
+    padding: 10px;
+    border: rgba(0, 0, 0, 0.466);
+    border-style: solid;
+}
+
+.info_categorias {
+    font-size: 0.9em;
+    padding-top: 20px;
+    padding-left: 40px;
+    line-height: 150%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .datos_personales {
+    background-color: rgb(255, 195, 0, 0.25);
     border-radius: 10px;
     grid-area: s;
     border-radius: 10px;
     border: rgba(0, 0, 0, 0.466);
     border-style: solid;
+    font-size: 1.2em;
+    padding: 10px;
 }
 
 .formulario {
-    padding: 10px;
+    font-size: 0.9em;
+    padding-left: 40px;
 }
 
 .mapa {
