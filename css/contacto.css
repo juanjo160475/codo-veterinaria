@@ -5,11 +5,11 @@
     display: grid;
     /*grid-template-columns: 33.33%, 33.33%, 33.33%;
     grid-template-rows: 50%, 50%;*/
-    grid-template-areas: "f f f f" 
-                         "s s t t"
-                         "s s t t"
-                         "s s t t"
-                         "s s t t";
+    grid-template-areas: "f f f f f" 
+                         "s s t t t"
+                         "s s t t t"
+                         "s s t t t"
+                         "s s t t t";
     gap: 2rem;
 }
 
