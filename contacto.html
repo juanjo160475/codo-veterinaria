@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagenes/inicio.ico" type="image x/icon">
     <link rel="stylesheet" href="css/estiloHeader.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +29,38 @@
     </nav>
 
     <main>
-
-
+        <div class="grid-container">
+            <section class="info_contacto">
+                <p>Información General</p>
+                <p><b>Télefono</b>: 435446547</p>
+                <p><b>Horario de Atención</b>: 9 a 18 hs.</p>
+                <p><b>Dirección</b>: Av. Tte. Gral. Donato Álvarez 972</p>
+            </section>
+            <section class="datos_personales">
+                <form action="" method="post" class="formulario">
+                    <legend><b>Datos Personales</b></legend>
+                    <br>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" size="20" maxlength="20"
+                        required>
+                    <br><br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" size="20" required>
+                    <br><br>
+                    <label for="celular">Celular:</label>
+                    <input type="text" name="celular" id="celular" placeholder="Ingrese su celular" size="20" required>
+                    <br><br>
+                    <textarea name="comentario" rows="10" cols="40" required>Comentarios</textarea>
+                    <br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+            <section class="mapa">
+                <iframe class="frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5522.262952403353!2d-58.46279411614783!3d-34.61535702341535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1e9967965b%3A0x847de6b7acf08348!2sAv.%20Tte.%20Gral.%20Donato%20%C3%81lvarez%20972%2C%20C1406%20BOU%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1661471969275!5m2!1ses!2sar" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
 
 
     </main>
