@@ -1,7 +1,6 @@
 .grid-container{
     padding-left: 1rem;
     padding-right: 1rem;
-    height: 40rem;
     display: grid;
     /*grid-template-columns: 33.33%, 33.33%, 33.33%;
     grid-template-rows: 50%, 50%;*/
@@ -54,6 +53,7 @@
 .mapa {
     border-radius: 10px;
     grid-area: t;
+  
 }
 
 .frame {
@@ -78,17 +78,17 @@
     
 @media screen and (max-width: 640px) {
     .grid-container {
-        grid-template-areas: "f f f"
-                             "s s s"
-                             "t t t"
-                             "t t t";
+        grid-template-areas:
+        
+        "f f f"
+        "s s s"
+        "t t t"
+        "t t t";
     }
     .info_categorias {
         display: flex;
         flex-direction: column;
         text-align: left;
     }
-    .mapa {
-        height: 200%;
-    }
+    
   }
