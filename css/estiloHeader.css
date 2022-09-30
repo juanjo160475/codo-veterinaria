@@ -38,8 +38,7 @@
     position: absolute;
     left: 0%;
     top: 0%;
-    width: 30%;
-    height: 100%;
+    width: 20%;
     border-right: 4mm ridge var(--color4);
     border-radius: 0% 90% 0% 0%;
     background-color:var(--color6);
