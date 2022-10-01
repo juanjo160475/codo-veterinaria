@@ -433,7 +433,7 @@
     font-weight: bold;
     width: 50%;
     left: 2em;
-    bottom: 0.5em;
+    bottom: 2em;
     color: var(--color2);
     /* text-shadow: 2px 2px black;  */
   }
