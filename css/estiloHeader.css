@@ -1,153 +1,196 @@
 * {
-    margin: 0;
-    padding: 0;
-    /* toma el padding sin agregar al tamaño del contenedor*/
-    box-sizing: border-box;
-  }
-  /* agregue tipografia de google fonts */
-  body {
-    font-family: "Combo", "cursive";
-    min-height: 100vh;
-  }
-  :root{
-    /* #4ead15
+  margin: 0;
+  padding: 0;
+  /* toma el padding sin agregar al tamaño del contenedor*/
+  box-sizing: border-box;
+}
+/* agregue tipografia de google fonts */
+body {
+  font-family: "Combo", "cursive";
+  min-height: 100vh;
+}
+:root {
+  /* #4ead15
   #DAF7A6
   #FFC300
   #FF5733
   #C70039
   #900C3F */
-    --color1:rgb(78, 173, 21);
-    --color2:rgb(218, 247, 166);
-    --color3:rgb(255, 195, 0);
-    --color4:rgb(255, 87, 51);
-    --color5:rgb(199, 0, 57);
-    --color6:rgb(144, 12, 63);
-  }
+  --color1: rgb(78, 173, 21);
+  --color2: rgb(218, 247, 166);
+  --color3: rgb(255, 195, 0);
+  --color4: rgb(255, 87, 51);
+  --color5: rgb(199, 0, 57);
+  --color6: rgb(144, 12, 63);
+}
+header {
+  font-size: 1.4em;
+  background-image: linear-gradient(90deg, var(--color1), rgb(29, 186, 136));
+  height: 6em;
+  position: relative;
+}
+header h1 {
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  color: var(--color2);
+}
+
+header .logo {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 20%;
+  border-right: 4mm ridge var(--color4);
+  border-radius: 0% 90% 0% 0%;
+  background-color: var(--color6);
+}
+.logo img {
+  width: 90%;
+}
+
+nav {
+  background-color: var(--color6);
+  font-size: 1.2em;
+  height: 3.5em;
+  text-align: center;
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.ul-nav {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#menu {
+  display: none;
+}
+
+/* main {
+  margin-top: 2em;
+} */
+
+/* quite el "li" porque afecta a todas las listas de la pagina pasa lo mismo si ponemos "a" */
+.categorias {
+  display: inline;
+  padding-inline: 50px;
+}
+/* todos los "a" que esten dentro del nav */
+nav a {
+  color: var(--color2);
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  background-color: var(--color5);
+  border-radius: 30px;
+}
+nav a:active {
+  background-color: var(--color2);
+  color: var(--color5);
+}
+
+footer {
+  background-image: linear-gradient(90deg, var(--color1), rgb(29, 186, 136));
+  /* background-image: linear-gradient(to right, var (--color1) 0%, #38f9d7 100%); */
+  height: 8em;
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 30px;
+  color: var(--color6);
+}
+.footer {
+  display: flex; /* flex-direccion = row  y flex-wrap = nowrap por defecto 
+   (wrap permite que se coloquen como elementos en multilinea y nowrap los acomoda en una linea) */
+  justify-content: space-evenly; /*espacio entre items*/
+}
+.redes {
+  margin-top: 1rem;
+  border: 1px solid var(--color6);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--color5);
+  border-radius: 10px 100px / 120px;
+}
+.redes a {
+  text-decoration: none;
+  color: var(--color2);
+}
+@media screen and (max-width: 640px) {
   header {
-    font-size: 1.4em;
-    background-image: linear-gradient(90deg, var(--color1), rgb(29, 186, 136));
-    height: 6em;
-   position: relative;
-   
+    font-size: 1em;
+    position: relative;
   }
-  header h1{
+  header h1 {
     position: absolute;
     left: 40%;
-    top: 20%;
+    top: 13%;
     color: var(--color2);
   }
 
-  header .logo{
+  header .logo {
     position: absolute;
     left: 0%;
     top: 0%;
-    width: 20%;
-    border-right: 4mm ridge var(--color4);
-    border-radius: 0% 90% 0% 0%;
-    background-color:var(--color6);
-  }
-  .logo img{
+    width: 35%;
     height: 100%;
-    width: 80%;
+    border-radius: 0% 90% 0% 0%;
   }
-  
-  
-  nav {
-    /* background-color: rgb(73, 73, 73); */
+  .logo img {
+    height: 100%;
+    width: 90%;
+  }
+
+ 
+  #menu {
+    display: block;
+    color: var(--color2);
     background-color: var(--color6);
     font-size: 1.2em;
-    height: 3.5em;
-    text-align: center;
-    padding-top: 20px;
-    position: sticky;
-    /* margin-top: 120px; */
-    top: 0;
-    width: 100%;
+    font-weight: bold;
+    border: 3px solid var(--color2);
+    border-radius: 0.3em;
+    position: absolute;
+    left: 0.5em;
+    top: .5em;
     z-index: 1;
   }
-  .ul-nav {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-  }
   
-  main {
-    margin-top: 2em;
+  #menu-cerrar {
+    display: none;
   }
-  
-  /* quite el "li" porque afecta a todas las listas de la pagina pasa lo mismo si ponemos "a" */
-  .categorias {
-    display: inline;
-    padding-inline: 50px;
+  #menu.salir #menu-abrir {
+    display: none;
   }
-  /* todos los "a" que esten dentro del nav */
-  nav a {
-    color: var(--color2);
-    text-decoration: none;
+
+  #menu.salir #menu-cerrar {
     display: block;
   }
-  nav a:hover {
-    background-color: var(--color5);
-    border-radius:30px;
+  #ul-nav {
+    position: absolute;
+    display: none;
+    font-size: 1.4em;
+    text-align: left;
+    padding-left: 2em;
   }
-  nav a:active {
-    background-color: var(--color4);
-  }
-  
-  footer {
-    background-image: linear-gradient(90deg, var(--color1), rgb(29, 186, 136));
-    /* background-image: linear-gradient(to right, var (--color1) 0%, #38f9d7 100%); */
-    height: 8em;
-    width: 100%;
-    bottom: 0px;
-    text-align: center;
-    padding-top: 30px;
-    margin-top: 30px;
-    color: var(--color6);
-  }
-  .footer {
-    display: flex; /* flex-direccion = row  y flex-wrap = nowrap por defecto 
-   (wrap permite que se coloquen como elementos en multilinea y nowrap los acomoda en una linea) */
-    justify-content: space-evenly; /*espacio entre items*/
-  }
-  .redes {
-    margin-top: 1rem;
-    border:1px solid var(--color6);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    background-color: var(--color5);
-    border-radius: 10px 100px / 120px;
 
+ #ul-nav.visible {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    top: 0;
   }
-  .redes a{
-    text-decoration: none;
-    color: var(--color2);
-  }
-  @media screen and (max-width: 640px) {
-    header {
-      font-size: 1em;
-     position: relative;
-    }
-    header h1{
-      position: absolute;
-      left: 40%;
-      top: 13%;
-      color: var(--color2);
-    }
-  
-    header .logo{
-      position: absolute;
-      left: 0%;
-      top: 0%;
-      width: 35%;
-      height: 100%;
-      border-radius: 0% 90% 0% 0%;
-    
-    }
-    .logo img{
-      height: 100%;
-      width: 90%;
-    }
-    
+
+  body.no-scroll{
+    overflow: hidden;
   }
   
-  
+}

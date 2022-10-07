@@ -3,6 +3,7 @@
     display:flex;
     justify-content: space-around;
     z-index: 0;
+    margin-top: 2em;
   }
   
   .imagen_index > .img_index_1 {
@@ -96,4 +97,11 @@
 
   .imagen_prof_subtitulo {
     padding-top: 20px;
+  }
+  @media screen and (max-width: 640px) {
+    .imagen_index{
+     
+     overflow: hidden; 
+     animation: none;
+    }
   }
