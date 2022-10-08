@@ -1,9 +1,9 @@
 .grid-container{
-    padding-left: 1rem;
-    padding-right: 1rem;
+     padding-left: 1rem;
+    padding-right: 1rem; 
     display: grid;
-    /*grid-template-columns: 33.33%, 33.33%, 33.33%;
-    grid-template-rows: 50%, 50%;*/
+    /* grid-template-columns: 33.33%, 33.33%, 33.33%;
+    grid-template-rows: 50%, 50%; */
     grid-template-areas: "f f f" 
                          "s t t"
                          "s t t"
@@ -17,21 +17,22 @@
     border-radius: 10px;
     grid-area: f;
     font-size:1.2em;
-    padding: 10px;
+    /* padding: 10px; */
     border: rgba(0, 0, 0, 0.466);
     border-style: solid;
 }
 
 .info_categorias {
     font-size: 0.9em;
-    padding-top: 20px;
+     padding-top: 20px;
     padding-bottom: 10px;
-    padding-left: 40px;
-    line-height: 150%;
-    display: grid;
+    padding-left: 40px; 
+     line-height: 150%; 
+    /*https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout*/
+     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    row-gap: 10%;
+    grid-template-rows: repeat(2,1fr); 
+    row-gap: 10%;  
     text-align:center;
 }
 
@@ -48,7 +49,7 @@
 
 .formulario {
     font-size: 0.9em;
-    padding-left: 40px;
+   
 }
 
 .mapa {
@@ -73,7 +74,7 @@
                              "t t t";
     }
     .mapa {
-        height: 200%;
+        height: 100%;
     }
    }
     
@@ -85,11 +86,14 @@
         "s s s"
         "t t t"
         "t t t";
+        
     }
     .info_categorias {
-        display: flex;
+         display: flex;
         flex-direction: column;
-        text-align: left;
+        text-align: left; 
     }
+
+   
     
   }
