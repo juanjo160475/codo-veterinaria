@@ -1,5 +1,6 @@
 main{
     background-color: var(--color2);
+     padding: 1em;
 }
 
 
@@ -53,7 +54,7 @@ main{
     width: 100%;
     box-shadow: 10px 10px 13px 1px var(--color6);
     background-color: var(--color2);
-    border: 2.5em solid var(--color5);
+    border: 2em solid var(--color1);
 }
 
 .consejo img {
@@ -111,4 +112,22 @@ main{
         100%{margin-left: -300%;}
     }
 
-                    
+    /****video curiosos****/
+    .videos-curiosos h3{
+        text-align: center;
+    }
+     .videos-curiosos{
+        padding-top: 2em;
+    
+     } 
+     
+     .videos-curiosos iframe{
+        width: 50%;
+        height: 20em;
+     }
+     .videos{
+        display: flex;
+     }
+     .videos a{
+        color: var(--color6);
+     }
