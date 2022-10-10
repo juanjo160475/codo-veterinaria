@@ -1,11 +1,15 @@
+main{
+    background-color: var(--color2);
+}
+
+
 .grid-contenedor {
     display: grid;
     grid-template-areas:
         "h h h"
         "a b c"
         "d e f";
-    background-color: var(--color3);
-    gap: 3em;
+        gap: 3em;
 }
 
 .grid-contenedor h2 {
@@ -68,5 +72,43 @@
     margin-left: .4em;
 }
 
+/*****carrousel*******/
+
+.nuestros-clientes h3{
+    text-align: center;
+    }
+    .slider-frame{
+        width: 50%;
+        height: 24em;
+        margin: 50px auto 0;
+        overflow: hidden;
+        
+    }
+    .slider-frame ul{
+        display: flex;
+        padding: 0%;
+        width: 400%;
+        animation: slide 16s infinite alternate ease-in-out;
+    }
+    .slider-frame li{
+        list-style: none;
+        width: 100%;
+    }
+    .slider-frame img{
+        width: 100%;
+    }
+    @keyframes slide {
+        0%{margin-left: 0%;}
+        20%{margin-left: 0%;}
+    
+        25%{margin-left: -100%;}
+        45%{margin-left: -100%;}
+    
+        50%{margin-left: -200%;}
+        70%{margin-left: -200%;}
+        
+        75%{margin-left: -300%;}
+        100%{margin-left: -300%;}
+    }
 
                     
