@@ -15,7 +15,7 @@
       12,
       1fr
     ); /* divide en 12 columnas y les da igual tamaño*/
-    grid-template-rows: repeat(15, 1fr);
+    grid-template-rows: repeat(11, 1fr);
   }
   .grid-aviso {
     grid-column: 1/-1;
@@ -70,40 +70,59 @@
   }
   .grid-productos {
     padding-top: 1em;
-    border-bottom: none;
+    
+    
   }
   .accesorios {
     grid-column: 1/7;
-    grid-row: 4/7;
+    grid-row: 4/6;
   }
   .alimentos {
     grid-column: 7/13;
-    grid-row: 4/7;
+    grid-row: 4/6;
   }
   .juguetes {
     grid-column: 1/7;
-    grid-row: 7/9;
-    border-bottom: 1px solid black;
+    grid-row: 6/7;
+  
   }
   .cuchas {
     grid-column: 7/13;
-    grid-row: 7/9;
-    border-bottom: 1px solid black;
+    grid-row: 6/7;
+    
   }
+  .btn-productos {
+    grid-column: 4/10;
+    grid-row: 7/8;
+    padding-left: 1em;
+    /* justify-self: center; */
+  }
+  .btn-productos button{
+    background-image: linear-gradient(90deg, var(--color1), rgb(29, 186, 136));
+    border-radius: 0.3em;
+    width: 70%;
+    height: 40%;
+    color: var(--color5);
+    font-size: 1em;
+    border: none;
+  }
+  
   .grid-especialidades {
     grid-column: 1/13;
-    grid-row: 9/11;
+    grid-row: 8/9;
     margin-left: 1em;
+    border-top: 1px solid black;
   }
   .grid-especialistas {
     grid-column: 1/13;
-    grid-row: 11/13;
+    grid-row: 9/10;
     align-self: stretch;
+    border-bottom: 1px solid black;
   }
 
   .grid-belleza {
     grid-column: 1/13;
-    grid-row: 13/16;
+    grid-row: 10/12;
   }
   .img-belleza {
     width: 100%;
@@ -115,8 +134,21 @@
     position: absolute;
     width: 100%;
     left: 0.5em;
-    bottom: 1em;
+    bottom: 2em;
     color: var(--color2);
+  }
+  .belleza-btn{
+    position: absolute;
+    right: 0;
+    top: .5em;
+  }
+  .belleza-btn button{
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    background-color: var(--color1);
+    color: var(--color2);
+    border: none;
   }
 
   .img-belleza img {
@@ -207,19 +239,36 @@
   }
 
   /*grid productos*/
+  .grid-productos {
+    padding-top: 1em;
+    border-bottom: 1px solid black;
+  }
   .titulo-productos {
     grid-column: 1/13;
     grid-row: 3/4;
     padding-left: 1em;
     /* justify-self: center; */
   }
+  .btn-productos {
+    grid-column: 7/13;
+    grid-row: 6/7;
+    padding-left: 1em;
+    /* justify-self: center; */
+  }
+  .btn-productos button{
+    background-image: linear-gradient(90deg, var(--color1), rgb(29, 186, 136));
+    border-radius: 0.3em;
+    width: 70%;
+    height: 50%;
+    color: var(--color5);
+    font-size: 1em;
+    border: none;
+  }
+  
   .grid-productos ol {
     padding-top: 0.5em;
   }
-  .grid-productos {
-    padding-top: 1em;
-    border-bottom: 1px solid black;
-  }
+ 
   .accesorios {
     grid-column: 1/4;
     grid-row: 4/7;
@@ -230,11 +279,13 @@
   }
   .juguetes {
     grid-column: 7/10;
-    grid-row: 4/7;
+    grid-row: 4/6;
+    border-bottom: none;
   }
   .cuchas {
     grid-column: 10/13;
-    grid-row: 4/7;
+    grid-row: 4/6;
+    border-bottom: none;
   }
   /*grid especialidades*/
 
@@ -262,10 +313,23 @@
     position: absolute;
     font-size: 0.9em;
     width: 100%;
-    bottom: 6em;
+    bottom: 3em;
     left: 1em;
     color: var(--color2);
     /* text-shadow: 2px 2px black;  */
+  }
+  .belleza-btn{
+    position: absolute;
+    right: 1em;
+    top: .5em;
+  }
+  .belleza-btn button{
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    background-color: var(--color1);
+    color: var(--color2);
+    border: none;
   }
 
   .img-belleza img {
@@ -316,23 +380,10 @@
     display: grid;
     width: 100%;
     margin: 20px auto;
-    /* justify-items: center;
-     align-items: center; */
-
-    /* justify-content:start; */
     row-gap: 5px;
 
-    grid-template-columns: repeat(
-      12,
-      1fr
-    ); /* divide en 12 columnas y les da igual tamaño*/
+    grid-template-columns:repeat( 12, 1fr ); 
     grid-template-rows: repeat(16, 1fr);
-    /* grid-template-areas:
-        "area1 area1 area1 area1 area1"
-        "area2 area2 area2 area3 area3"
-        "area2 area2 area2 area3 area3"
-        "area4 area4 area4 area3 area3"
-        "area5 area5 area5 area5 area5"; */
   }
   .grid-aviso {
     grid-column: 1/-1;
@@ -344,6 +395,7 @@
     background-color: var(--color3);
     border: 2px dotted black;
     padding: 0.5em;
+  
   }
 
   /* grid Animales */
@@ -375,19 +427,38 @@
   }
 
   /*grid productos*/
-  .titulo-productos {
-    grid-column: 1/4;
-    grid-row: 3/7;
-    padding-left: 1em;
-    /* justify-self: center; */
-  }
-  .grid-productos ol {
-    padding-top: 0.5em;
-  }
   .grid-productos {
     padding-top: 1em;
     border-bottom: 1px solid black;
   }
+  .grid-productos ol {
+    padding-top: 0.5em;
+  }
+  
+  .titulo-productos {
+    grid-column: 1/4;
+    grid-row: 3/6;
+    padding-left: 1em;
+   border-bottom: none;
+    /* justify-self: center; */
+  }
+  .btn-productos {
+    grid-column: 1/4;
+    grid-row: 6/7;
+    padding-left: 1em;
+    border-bottom: 1px solid black;
+    /* justify-self: center; */
+  }
+  .btn-productos button{
+    background-image: linear-gradient(90deg, var(--color1), rgb(29, 186, 136));
+    border-radius: 0.3em;
+    width: 70%;
+    height: 50%;
+    color: var(--color5);
+    font-size: 1em;
+    border: none;
+  }
+  
   .accesorios {
     grid-column: 4/7;
     grid-row: 3/7;
@@ -432,9 +503,22 @@
     font-weight: bold;
     width: 50%;
     left: 2em;
-    bottom: 0.5em;
+    bottom: 2em;
     color: var(--color2);
     /* text-shadow: 2px 2px black;  */
+  }
+  .belleza-btn{
+    position: absolute;
+    right: 4em;
+    bottom: 2em;
+  }
+  .belleza-btn button{
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    background-color: var(--color1);
+    color: var(--color2);
+    border: none;
   }
 
   .img-belleza img {

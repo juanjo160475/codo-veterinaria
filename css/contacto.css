@@ -1,16 +1,15 @@
 .grid-container{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    height: 40rem;
+     padding-left: 1rem;
+    padding-right: 1rem; 
     display: grid;
-    /*grid-template-columns: 33.33%, 33.33%, 33.33%;
-    grid-template-rows: 50%, 50%;*/
-    grid-template-areas: "f f f f f" 
-                         "s s t t t"
-                         "s s t t t"
-                         "s s t t t"
-                         "s s t t t";
+    /* grid-template-columns: 33.33%, 33.33%, 33.33%;
+    grid-template-rows: 50%, 50%; */
+    grid-template-areas: "f f f" 
+                         "s t t"
+                         "s t t"
+                         "s t t";
     gap: 2rem;
+    margin-top: 2em;
 }
 
 .info_general {
@@ -18,18 +17,23 @@
     border-radius: 10px;
     grid-area: f;
     font-size:1.2em;
-    padding: 10px;
+    /* padding: 10px; */
     border: rgba(0, 0, 0, 0.466);
     border-style: solid;
 }
 
 .info_categorias {
     font-size: 0.9em;
-    padding-top: 20px;
-    padding-left: 40px;
-    line-height: 150%;
-    display: flex;
-    justify-content: space-evenly;
+     padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 40px; 
+     line-height: 150%; 
+    /*https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout*/
+     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr); 
+    row-gap: 10%;  
+    text-align:center;
 }
 
 .datos_personales {
@@ -45,12 +49,13 @@
 
 .formulario {
     font-size: 0.9em;
-    padding-left: 40px;
+   
 }
 
 .mapa {
     border-radius: 10px;
     grid-area: t;
+  
 }
 
 .frame {
@@ -60,3 +65,35 @@
     border: rgba(0, 0, 0, 0.466);
     border-style: solid;
 }
+
+@media screen and (min-width: 640px) and (max-width: 850px) {
+    .grid-container {
+        grid-template-areas: "f f f"
+                             "s s s"
+                             "t t t"
+                             "t t t";
+    }
+    .mapa {
+        height: 100%;
+    }
+   }
+    
+@media screen and (max-width: 640px) {
+    .grid-container {
+        grid-template-areas:
+        
+        "f f f"
+        "s s s"
+        "t t t"
+        "t t t";
+        
+    }
+    .info_categorias {
+         display: flex;
+        flex-direction: column;
+        text-align: left; 
+    }
+
+   
+    
+  }
