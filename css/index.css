@@ -66,7 +66,7 @@ main{
   
   .profesionales {
     width: 100%;
-    color:var(--color1);
+    color:var(--color3);
     text-decoration: underline;
     text-align: center;
     font-size: 2em;
@@ -82,11 +82,13 @@ main{
     width: 25%;
     height: 20em;
     /* border: #16fb0661; */
-    border: var(--color1);
+    border: var(--color3);
     border-style: groove;
     border-radius: 20%;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    font-weight: bold;
     text-align: center;
+    color: var(--color3)
   }
   
   .profesionales_img img{
