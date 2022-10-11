@@ -13,7 +13,7 @@ main{
         gap: 3em;
 }
 
-.grid-contenedor h2 {
+.grid-contenedor>h2{
     grid-area: h;
     justify-self: center;
     padding-top: 1em;
@@ -36,8 +36,7 @@ main{
 }
 
 .item-5 {
-    grid-area: e;
-   
+    grid-area: e;   
 }
 
 .item-6 {
@@ -75,7 +74,7 @@ main{
 
 /*****carrousel*******/
 
-.nuestros-clientes h3{
+.nuestros-clientes h2{
     text-align: center;
     }
     .slider-frame{
@@ -113,9 +112,14 @@ main{
     }
 
     /****video curiosos****/
-    .videos-curiosos h3{
+    .videos-curiosos h2{
         text-align: center;
     }
+
+    .videos{
+        display: flex;
+        padding-top: 2em;
+     }
      .videos-curiosos{
         padding-top: 2em;
     
@@ -125,9 +129,8 @@ main{
         width: 50%;
         height: 20em;
      }
-     .videos{
-        display: flex;
-     }
+     
      .videos a{
         color: var(--color6);
+        padding-left: 2em;
      }

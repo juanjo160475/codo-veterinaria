@@ -1,9 +1,13 @@
+main{
+  background-color: var(--color2);
+  padding: 1.5em;
+}
 .imagen_index{
     width: 100%;
     display:flex;
     justify-content: space-around;
     z-index: 0;
-    margin-top: 2em;
+    
   }
   
   .imagen_index > .img_index_1 {
@@ -25,7 +29,8 @@
     padding-left: 20px;
     padding-bottom: 10px;
     width: 100%;
-    border: black;
+    /* border: black; */
+    border: var(--color5);
     border-style: solid;
     border-radius: 20px;
     font-size: 1.3em;
@@ -33,7 +38,7 @@
   
   .nosotros > .nosotros_titulo{
     font-size: 1.5em;
-    color:#1e9a15;
+    color:var(--color5);
     text-decoration: underline;
   }
   
@@ -47,7 +52,7 @@
     padding-top: 10px;
     width: 30%;
     padding-left: 20px;
-    border: black;
+    border: var(--color4);
     border-style: solid;
     border-radius: 20px;
     font-size: 1.3em;
@@ -55,13 +60,13 @@
   
   .categorias_titulo {
     font-size: 1.4em;
-    color:#1e9a15;
+    color:var(--color4);
     text-decoration: underline;
   }
   
   .profesionales {
     width: 100%;
-    color:#1e9a15;
+    color:var(--color1);
     text-decoration: underline;
     text-align: center;
     font-size: 2em;
@@ -76,7 +81,8 @@
   .profesionales_img{
     width: 25%;
     height: 20em;
-    border: #16fb0661;
+    /* border: #16fb0661; */
+    border: var(--color1);
     border-style: groove;
     border-radius: 20%;
     font-size: 1.2em;
