@@ -9,26 +9,24 @@ main{
     /* grid-template-columns: 33.33%, 33.33%, 33.33%;
     grid-template-rows: 50%, 50%; */
     grid-template-areas: "f f f" 
-                         "s t t"
-                         "s t t"
-                         "s t t";
+                         "s s t"
+                         "s s t"
+                         "s s t";
     gap: 2rem;
     
 }
 
 .info_general {
-    background-color: rgb(255, 195, 0, 0.2);
     border-radius: 10px;
     grid-area: f;
-    font-size:1.2em;
-    /* padding: 10px; */
+    font-size:1.3rem;
+    padding: 10px;
     border: rgba(0, 0, 0, 0.466);
     border-style: solid;
 }
 
 .info_categorias {
-    font-size: 0.9em;
-     padding-top: 20px;
+    padding-top: 20px;
     padding-bottom: 10px;
     padding-left: 40px; 
      line-height: 150%; 
@@ -41,20 +39,111 @@ main{
 }
 
 .datos_personales {
-    /* background-color: rgb(255, 195, 0, 0.25); */
-    background-color: rgb(199, 0, 57,0.2);
     border-radius: 10px;
     grid-area: s;
     border-radius: 10px;
     border: rgba(0, 0, 0, 0.466);
     border-style: solid;
-    font-size: 1.2em;
     padding: 10px;
 }
 
 .formulario {
-    font-size: 0.9em;
-   
+    font-size: 1.3rem;
+}
+
+.form_label{
+    padding-left: 5px;
+}
+
+.form_grupo_input{
+    position: relative;
+}
+
+.form_input{
+    width: 80%;
+    border: 3px solid transparent;
+    transition: .3s ease all;
+    border-radius: 8px;
+}
+
+.form_input:focus{
+    border: 3px solid rgb(19, 126, 239);
+    outline: none;
+}
+
+.formulario_input_error{
+    font-size: 0.8em;
+    padding-top: 4px;
+    display: none;
+}
+
+.formulario_input_error-activo{
+    display: block;
+}
+
+.form_validacion_estado{
+    position: absolute;
+    right: 21%;
+    top: 2px;
+    opacity: 0;
+}
+
+.form_mensaje{
+    background: rgb(222, 24, 24);
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    display: none;
+}
+
+.form_mensaje-activo{
+    display: block;
+}
+
+.comentario{
+    width: 100%;
+}
+
+.form_grupo-btn-enviar{
+    text-align: center;
+}
+
+.formulario__btn{
+    height: 25px;
+    line-height: 25px;
+    width: 20%;
+    font-size: 1em;
+    transition: .1s ease all;
+    margin-bottom: 10px;
+}
+
+.form_mensaje-exito{
+    font-size: 1em;
+    display: none;
+    color:rgb(35, 52, 9);
+}
+
+.form_mensaje-exito-activo{
+    display: block;
+}
+
+.form_grupo-correcto .form_validacion_estado{
+    color:rgb(129, 195, 31);
+    opacity: 1;
+}
+
+.form_grupo-incorrecto .form_label{
+    color:rgb(255, 0, 0);
+}
+
+.form_grupo-incorrecto .form_validacion_estado{
+    color:rgb(228, 9, 9);
+    opacity: 1;
+}
+
+.form_grupo-incorrecto .form_input{
+    border: 2px solid rgb(228, 9, 9);
 }
 
 .mapa {
