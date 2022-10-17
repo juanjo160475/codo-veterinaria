@@ -33,6 +33,9 @@ Redes sociales:
 
 </div>
 `
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
 
 window.addEventListener('DOMContentLoaded',(event) =>{
 const menuBtn = document.getElementById ('menu')
