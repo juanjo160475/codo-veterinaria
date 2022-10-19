@@ -4,6 +4,8 @@
   /* toma el padding sin agregar al tamaño del contenedor*/
   box-sizing: border-box;
 }
+
+
 /* agregue tipografia de google fonts */
 body {
   font-family: "Combo", "cursive";
