@@ -129,6 +129,11 @@ text-align: center;
           background-color: var(--color2);
   }
 
+  .imagen.hover {
+    transform:none;
+    transform-origin: none;
+  }
+
   #img-elegida{
     width: 100%; 
 }

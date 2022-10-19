@@ -132,7 +132,7 @@ function llenarListas(cualidades) {
   
   const lista = document.getElementById("id-ul")
   lista.innerHTML=`
-  <li>Raza : ${dibujaCualidades (cualidades.name)} </li>
+  <li>Raza : <span> ${cualidades.name} </span></li>
   <li>Inteligencia : ${dibujaCualidades (cualidades.intelligence)} </li>
   <li>Adaptibilidad :  ${dibujaCualidades (cualidades.adaptability)} </li>
   <li>Aseo : ${dibujaCualidades (cualidades.grooming)} </li>

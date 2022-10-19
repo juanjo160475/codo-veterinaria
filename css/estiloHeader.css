@@ -26,13 +26,13 @@ body {
 header {
   font-size: 1.4em;
   background-image: linear-gradient(90deg, var(--color1), rgb(29, 186, 136));
-  height: 6em;
+  height: 9em;
   position: relative;
 }
 header h1 {
   position: absolute;
   left: 40%;
-  top: 30%;
+  top: 20%;
   color: var(--color2);
 }
 
@@ -40,25 +40,29 @@ header .logo {
   position: absolute;
   left: 0%;
   top: 0%;
-  width: 19%;
+  bottom: 2.5em;
+  width: 20%;
   border-right: 4mm ridge var(--color4);
   border-radius: 0% 90% 0% 0%;
   background-color: var(--color6);
 }
 .logo img {
-  width: 90%;
+  position: relative;
+  bottom:0%;
+  width: 80%;
+  height: 100%;
 }
 
-nav {
+header nav {
   background-color: var(--color6);
   font-size: 1.2em;
-  height: 3.5em;
+  height: 2.5em;
   text-align: center;
   padding-top: 20px;
-  position: sticky;
-  top: 0;
+  position: absolute;
+  bottom: 0%;
   width: 100%;
-  z-index: 1;
+  
 }
 
 .ul-nav {
@@ -134,14 +138,15 @@ footer {
   header .logo {
     position: absolute;
     left: 0%;
-    top: 0%;
+    bottom: 0%;
     width: 35%;
     height: 100%;
     border-radius: 0% 90% 0% 0%;
   }
   .logo img {
-    height: 100%;
-    width: 90%;
+    position: relative;
+    height: 70%;
+    width: 70%;
   }
 
  
@@ -155,8 +160,8 @@ footer {
     border-radius: 0.3em;
     position: absolute;
     left: 0.5em;
-    top: .5em;
-    z-index: 1;
+    top: 0;
+    z-index: 2;
   }
   
   #menu-cerrar {
@@ -184,6 +189,8 @@ footer {
     background-color: black;
     opacity: 0.8;
     top: 0;
+    bottom: 0%;
+    z-index: 1;
   }
 
   body.no-scroll{

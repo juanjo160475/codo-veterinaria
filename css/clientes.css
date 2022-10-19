@@ -1,10 +1,60 @@
 main{
     background-color: var(--color2);
      padding: 1em;
+     
 }
 
 
+/*****carrousel*******/
+
+.nuestros-clientes h2{
+    text-align: center;
+    padding-top: 2em;
+    }
+
+    .nuestros-clientes{
+        width: 100%;
+        height: 24em;
+    }
+    .slider-frame{
+        width: 50%;
+        height: 100%;
+        margin: 50px auto 0;
+        overflow: hidden;
+        
+    }
+    .slider-frame ul{
+        display: flex;
+        padding: 0%;
+        width: 400%;
+        height: 100%;
+        animation: slide 16s infinite alternate ease-in-out;
+    }
+    .slider-frame li{
+        list-style: none;
+        width: 100%;
+    }
+    .slider-frame img{
+        width: 100%;
+    }
+    @keyframes slide {
+        0%{margin-left: 0%;}
+        20%{margin-left: 0%;}
+    
+        25%{margin-left: -100%;}
+        45%{margin-left: -100%;}
+    
+        50%{margin-left: -200%;}
+        70%{margin-left: -200%;}
+        
+        75%{margin-left: -300%;}
+        100%{margin-left: -300%;}
+    }
+
+
+/* consejos */
 .grid-contenedor {
+    margin-top: 10em;
     display: grid;
     grid-template-areas:
         "h h h"
@@ -16,7 +66,7 @@ main{
 .grid-contenedor>h2{
     grid-area: h;
     justify-self: center;
-    padding-top: 1em;
+    padding-top: .5em;
 }
 
 .item-1 {
@@ -72,44 +122,6 @@ main{
     margin-left: .4em;
 }
 
-/*****carrousel*******/
-
-.nuestros-clientes h2{
-    text-align: center;
-    }
-    .slider-frame{
-        width: 50%;
-        height: 24em;
-        margin: 50px auto 0;
-        overflow: hidden;
-        
-    }
-    .slider-frame ul{
-        display: flex;
-        padding: 0%;
-        width: 400%;
-        animation: slide 16s infinite alternate ease-in-out;
-    }
-    .slider-frame li{
-        list-style: none;
-        width: 100%;
-    }
-    .slider-frame img{
-        width: 100%;
-    }
-    @keyframes slide {
-        0%{margin-left: 0%;}
-        20%{margin-left: 0%;}
-    
-        25%{margin-left: -100%;}
-        45%{margin-left: -100%;}
-    
-        50%{margin-left: -200%;}
-        70%{margin-left: -200%;}
-        
-        75%{margin-left: -300%;}
-        100%{margin-left: -300%;}
-    }
 
     /****video curiosos****/
     .videos-curiosos h2{
@@ -129,8 +141,48 @@ main{
         width: 50%;
         height: 20em;
      }
-     
+     .videos ul{
+         margin-left: 3em;
+
+     }
      .videos a{
         color: var(--color6);
         padding-left: 2em;
+     }
+
+     /*celulares*/
+     @media screen and (max-width: 640px) {
+        .grid-contenedor {
+            margin-top: 3em;
+            display: grid;
+            grid-template-areas:
+                "h h h"
+                "a a a"
+                "b b b"
+                "c c c"
+                "d d d"
+                "e e e"
+                "f f f";
+                gap: 3em;
+        }
+        .slider-frame{
+            width: 100%; 
+            height: 100%;
+            margin: 50px auto 0;
+            overflow: hidden;
+            
+        }   
+        .videos{
+            display: flex;
+            padding-top: 2em;
+            flex-direction: column;
+         }
+         .videos-curiosos iframe{
+            width: 100%;
+            height: 20em;
+         }
+         .videos ul{
+            margin-left: 3em;
+   margin-top: 1em;
+        }
      }
