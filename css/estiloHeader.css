@@ -39,9 +39,8 @@ header h1 {
 header .logo {
   position: absolute;
   left: 0%;
-  top: 0%;
-  bottom: 2.5em;
-  width: 20%;
+  bottom:0%;
+  width: 25%;
   border-right: 4mm ridge var(--color4);
   border-radius: 0% 90% 0% 0%;
   background-color: var(--color6);
@@ -55,13 +54,14 @@ header .logo {
 
 header nav {
   background-color: var(--color6);
-  font-size: 1.2em;
+  font-size: 1em;
   height: 2.5em;
   text-align: center;
   padding-top: 20px;
   position: absolute;
+  right: 0%;
   bottom: 0%;
-  width: 100%;
+  width: 80%;
   
 }
 
@@ -130,8 +130,8 @@ footer {
   }
   header h1 {
     position: absolute;
+    top:1em;
     left: 40%;
-    top: 13%;
     color: var(--color2);
   }
 
@@ -148,7 +148,18 @@ footer {
     height: 70%;
     width: 70%;
   }
-
+  header nav {
+    background-color: var(--color6);
+    font-size: 1em;
+    height: 2.5em;
+    text-align: center;
+    padding-top: 20px;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    
+  }
  
   #menu {
     display: block;
