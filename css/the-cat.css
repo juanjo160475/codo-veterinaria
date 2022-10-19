@@ -1,0 +1,153 @@
+
+.maincontent{
+  padding-top: 2em;
+  display: grid;
+    grid-template-areas:
+        "a a b"
+        "c c c";
+        gap: 1em;
+        background-color: var(--color2);
+}
+
+
+.contenedor-principal {
+ 
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  margin: 30px;
+}
+.contenedor-principal .flecha-izquierda,
+.contenedor-principal .flecha-derecha {
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  height: 50%;
+  top: calc(50%-25%);
+  line-height: 40px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+}
+
+.contenedor-principal .flecha-izquierda:hover,
+.contenedor-principal .flecha-derecha:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.contenedor-principal .flecha-izquierda {
+  left: 0;
+}
+.contenedor-principal .flecha-derecha {
+  right: 0;
+}
+
+  
+.contenedor-carrousel {
+  width: 99%;
+  overflow: hidden;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+.contenedor-carrousel .carrousel{
+  display: flex;
+
+}
+.contenedor-carrousel .carrousel .imagen {
+  position: relative;
+  min-width: 20%;
+  transition: 0.3s all ease;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 0%;
+}
+.imagen.hover {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+.contenedor-carrousel .carrousel .imagen img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+/*imagen pricipal elegida por el usuario*/
+  #img-elegida{
+       width: 90%; 
+  }
+
+  #img-elegida img{
+    width: 100%;
+  }
+  .caracteristicas li{
+font-size: 1.5em;
+  }
+.caracteristicas h1{
+  font-size: 2em;
+text-align: center;
+
+}
+
+#id-ul li{
+  color: var(--color5);
+  margin-top: .5em;
+}
+#id-ul li span{
+  color:black;
+ 
+}
+
+#id-ul img{
+  width: .8em;
+  margin-right: .3em;
+}
+.grid-imagen{
+  grid-area: a;
+}
+.grid-caracteristicas{
+  grid-area: b;
+}
+.grid-carrousel{
+  grid-area: c;
+}
+  
+/* media queries */
+@media screen and (max-width: 640px) {
+
+  .maincontent{
+    padding: .5em;
+    display: grid;
+      grid-template-areas:
+          "a a"
+          "b b"
+          "c c";
+          gap: 1em;
+          background-color: var(--color2);
+  }
+
+  .imagen.hover {
+    transform:none;
+    transform-origin: none;
+  }
+
+  #img-elegida{
+    width: 100%; 
+}
+  .contenedor-carrousel {
+    overflow: visible;
+  }
+
+  .contenedor-carrousel .carrousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .contenedor-principal .flecha-izquierda,
+  .contenedor-principal .flecha-derecha {
+    display: none;
+  }
+}
