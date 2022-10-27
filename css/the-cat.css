@@ -1,6 +1,6 @@
 
 .maincontent{
-  padding-top: 2em;
+  padding-top: 1.5em;
   display: grid;
     grid-template-areas:
         "a a b"

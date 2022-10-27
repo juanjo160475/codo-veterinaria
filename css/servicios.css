@@ -1,6 +1,6 @@
 main{
   background-color: var(--color2);
-  padding: .5em;
+  padding: 1.5em;
 }
 /* celulares*/
 @media screen and (max-width: 640px) {

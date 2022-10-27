@@ -33,8 +33,6 @@ fetch(url,{headers: {
      hov.appendChild(image)
     gridCell.appendChild(hov)
      document.getElementById('grid').appendChild(gridCell)
-    // seleccionarImagen(imageData.url)
-    // llenarListas(imageData.breeds[0])
     if (index==0) {
       primeraImagen(image)
       llenarListas(buscarCualidades( `${imageData.url}`))
@@ -109,7 +107,6 @@ function buscarCualidades(urlImagen) {
   let aux
   imagesData.forEach(element => {
     if (element.url == urlImagen) {
-    //  console.log("raza "+ element.breeds[0].name)
      aux= element.breeds[0]
     }
 
@@ -139,10 +136,10 @@ function llenarListas(cualidades) {
   <li>Problemas de salud : ${dibujaCualidades (cualidades.healh_issues)} </li>
   <li>Nivel de afecto : ${dibujaCualidades (cualidades.affection_level)} </li>
   <li>Nivel de energia : ${dibujaCualidades (cualidades.energy_level)} </li>
-  <li>Amistad con niños : ${dibujaCualidades (cualidades.child_friendly)} </li>
-  <li>Amistad con perros : ${dibujaCualidades (cualidades.dog_friendly)} </li>
-  <li>Amistad con extraños : ${dibujaCualidades (cualidades.extranger_friendly)} </li>
-  <li>wikipedia : <a href="${cualidades.wikipedia_url}" target="_blank"> Ver en Wikipedia </a> </li>
+  <li>Amistaso con niños : ${dibujaCualidades (cualidades.child_friendly)} </li>
+  <li>Amistaso con perros : ${dibujaCualidades (cualidades.dog_friendly)} </li>
+  <li>Amistaso con extraños : ${dibujaCualidades (cualidades.extranger_friendly)} </li>
+  <li>Más información : <a href="${cualidades.wikipedia_url}" target="_blank"> Ver en Wikipedia </a> </li>
   `
 }
 

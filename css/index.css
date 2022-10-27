@@ -1,13 +1,13 @@
 main{
   background-color: var(--color2);
   padding: 1.5em;
+  overflow: hidden;
 }
 .imagen_index{
     width: 100%;
     display:flex;
     justify-content: space-around;
     z-index: 0;
-    
   }
   
   .imagen_index > .img_index_1 {
